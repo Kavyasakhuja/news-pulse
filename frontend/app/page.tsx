@@ -6,7 +6,7 @@ export default function Home() {
   const [clusters, setClusters] = useState<any[]>([]);
 
   useEffect(() => {
-    fetch("http://192.168.1.11:5000/api/news")
+    fetch("https://news-pulse-jjeq.onrender.com/api/news")
       .then(res => res.json())
       .then(data => setClusters(data));
   }, []);
